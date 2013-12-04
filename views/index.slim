@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title
+      = @config["shop_name"]
+
+  body
+    .items
+      .item
+        img(src=" q q q q")
+    form(action="/purchase" method="post")
+      javascript(src="https://checkout.webpay.jp/v1/" class="webpay-button" data-key="#{@config["webpay_public_key"]}")
+
